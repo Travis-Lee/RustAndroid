@@ -1,0 +1,28 @@
+#Use `cargo search ndk` or `cargo search cocoa` to find the latest available version of those crates.
+
+[target.'cfg(target_os = "android")'.dependencies]
+#ndk = "0.9.0"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+#cocoa = "0.26.1"
+
+[package]
+name = "RustAndroid"
+version = "1.0.0"
+edition = "2024"
+
+# details 
+description = "Simple Rust Android Demo"
+authors = ["LEON"]
+license = "MIT"
+
+[lib]
+name = "RustAndroid"
+path = "src/matrix.rs" 
+crate-type = ["cdylib"]
+
+[dependencies]
+#Without relying on external libraries
+
+
+
